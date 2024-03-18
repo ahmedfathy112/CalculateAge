@@ -27,7 +27,7 @@
   <h1>Age Calculator</h1>
   <input type="date" id="birthdate">
   <button onclick="calculateAge()">Calculate Age</button>
-  <div id="result">the age is: </div>
+  <div id="result"> </div>
 
   <script>
     function calculateAge() {
@@ -38,7 +38,7 @@
       if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthdate.getDate())) {
         age--;
       }
-      document.getElementById('result').innerText =  age;
+      document.getElementById('result').innerText ='the age is:'+ age;
     }
   </script>
 </body>
